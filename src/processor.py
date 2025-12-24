@@ -130,16 +130,6 @@ class AudienceProcessor:
         try:
             df = self.read_input_file()
             
-            # Crear carpeta del día (usamos la fecha de ejecución del primer registro o la fecha actual?)
-            # Requerimiento: "crear la carpeta correspondiente al día de impresión en formato YYYYMMDD"
-            # Asumiré la fecha actual del sistema para la carpeta de salida, 
-            # o podemos usar la fecha del archivo si es consistente.
-            # Usaré la fecha actual del sistema para la carpeta "hoy".
-            today_folder = datetime.now().strftime("%Y%m%d")
-            output_dir = self.output_base_path / today_folder
-            output_dir.mkdir(parents=True, exist_ok=True)
-            logger.info(f"Directorio de salida: {output_dir}")
-
             db_manager.connect()
 
             for index, row in df.iterrows():
@@ -150,6 +140,19 @@ class AudienceProcessor:
                     channel_name = row['CHANNEL']         # SMS, WHATSAPP, etc.
                     full_nemotecnia = row['NEMOTECNIA']   # C_INN_POS_QUINVPY_S0
                     
+                    # Determinar carpeta de salida basada en la fecha de ejecución del registro
+                    # Convertir YYMMDD (251226) a YYYYMMDD (20251226)
+                    try:
+                        dt_exec = datetime.strptime(exec_date_raw, "%y%m%d")
+                        folder_name = dt_exec.strftime("%Y%m%d")
+                    except ValueError:
+                        logger.error(f"Fecha inválida en fila {index}: {exec_date_raw}. Saltando.")
+                        continue
+
+                    output_dir = self.output_base_path / folder_name
+                    # Crear carpeta si no existe (idempotente)
+                    output_dir.mkdir(parents=True, exist_ok=True)
+
                     # Obtener sufijo
                     channel_suffix = self.get_channel_suffix(channel_name)
                     if not channel_suffix:
@@ -165,7 +168,7 @@ class AudienceProcessor:
                     # NEMOTECNIA_BASE + EXECUTION_DATE + CHANNEL_SUFFIX
                     filename = f"{nemotecnia_base}{exec_date_raw}{channel_suffix}.txt"
                     file_path = output_dir / filename
-                    logger.info(f"Procesando: {full_nemotecnia} para fecha {sql_date}")
+                    logger.info(f"Procesando: {full_nemotecnia} para fecha {sql_date} en carpeta {folder_name}")
                     
                     # Obtener Query
                     query_template = self.get_query_template(channel_suffix, channel_name)
