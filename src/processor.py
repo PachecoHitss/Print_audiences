@@ -28,9 +28,11 @@ class AudienceProcessor:
             logger.error(f"Error leyendo archivo de entrada: {e}")
             raise
 
-    def get_query_template(self, channel_suffix):
-        """Retorna el template SQL según el sufijo del canal."""
+    def get_query_template(self, channel_suffix, channel_name=None):
+        """Retorna el template SQL según el sufijo del canal y el nombre del canal."""
         
+        norm_channel = str(channel_name).upper().strip() if channel_name else ""
+
         # 1. EMAIL (_EP)
         if channel_suffix == '_EP':
             return """
@@ -47,10 +49,9 @@ class AudienceProcessor:
             ORDER BY 1
             """
         
-        # 2. IN_APP / PUSH (_IP, _AP, _S0)
-        # Nota: _AP aparece como PUSH_SUPER_APP y NOTIFICACION_PUSH_COTA en tu descripción.
-        # Asumo que ambos usan esta lógica. _S0 es SAT_PUSH.
-        elif channel_suffix in ['_IP', '_AP', '_S0']:
+        # 2. IN_APP (_IP) O PUSH_SUPER_APP (Específico)
+        # Solo PUSH_SUPER_APP lleva campos complementarios. NOTIFICATION_PUSH_COTA va por la general.
+        elif channel_suffix == '_IP' or norm_channel == 'PUSH_SUPER_APP':
             return """
             Select 
             DISTINCT '57'||right(A.TELE_NUMB,10) TELE_NUMB
@@ -63,7 +64,7 @@ class AudienceProcessor:
             ORDER BY 1
             """
             
-        # 3. GENERAL (WPP, SMS, RCS, etc.)
+        # 3. GENERAL (WPP, SMS, RCS, SAT_PUSH, NOTIFICATION_PUSH_COTA, etc.)
         else:
             return """
             Select DISTINCT A.TELE_NUMB
@@ -82,12 +83,13 @@ class AudienceProcessor:
         except ValueError:
             raise ValueError(f"Formato de fecha inválido: {date_yymmdd}")
 
-    def _confirm_overwrite(self, file_path):
+    def _confirm_overwrite(self, file_path, new_count):
         """Solicita confirmación al usuario si el archivo ya existe."""
         if not file_path.exists():
             return True
         
         print(f"\n[ALERTA] El archivo ya existe: {file_path.name}")
+        print(f"       El NUEVO archivo tendría {new_count} registros.")
         while True:
             response = input("¿Desea sobrescribirlo? (s/n): ").lower().strip()
             if response == 's':
@@ -102,7 +104,8 @@ class AudienceProcessor:
             'SMS': '_SL',
             'SAT_PUSH': '_S0',
             'RCS': '_RCS',
-            'NOTIFICACION_PUSH_COTA': '_AP',
+            'NOTIFICATION_PUSH_COTA': '_AP', # Corregido según imagen (NOTIFICATION)
+            'NOTIFICACION_PUSH_COTA': '_AP', # Mantengo variante en español por seguridad
             'PUSH_SUPER_APP': '_AP',
             'IN_APP': '_IP',
             'EMAIL': '_EP'
@@ -110,6 +113,15 @@ class AudienceProcessor:
         # Normalizar entrada: mayúsculas y quitar espacios
         clean_name = str(channel_name).upper().strip()
         return mapping.get(clean_name)
+
+    def extract_base_nemotecnia(self, full_nemotecnia, suffix):
+        """
+        Elimina el sufijo del canal de la nemotecnia completa.
+        Ej: C_INN_POS_QUINVPY_S0 con sufijo _S0 -> C_INN_POS_QUINVPY
+        """
+        if full_nemotecnia.endswith(suffix):
+            return full_nemotecnia[:-len(suffix)]
+        return full_nemotecnia
 
     def process_audiences(self):
         """Proceso principal."""
@@ -133,10 +145,10 @@ class AudienceProcessor:
             for index, row in df.iterrows():
                 try:
                     # Extraer datos del CSV
-                    # EXECUTION_DATE;MESSAGE_TYPE;SEGMENT;CHANNEL;NEMOTECNIA1;RECORDS
+                    # EXECUTION_DATE;MESSAGE_TYPE;SEGMENT;CHANNEL;NEMOTECNIA;RECORDS
                     exec_date_raw = row['EXECUTION_DATE'] # YYMMDD
                     channel_name = row['CHANNEL']         # SMS, WHATSAPP, etc.
-                    nemotecnia_base = row['NEMOTECNIA1']  # N_VAS_POS_CDVAPDN
+                    full_nemotecnia = row['NEMOTECNIA']   # C_INN_POS_QUINVPY_S0
                     
                     # Obtener sufijo
                     channel_suffix = self.get_channel_suffix(channel_name)
@@ -144,24 +156,19 @@ class AudienceProcessor:
                         logger.warning(f"Canal desconocido '{channel_name}' en fila {index}. Saltando.")
                         continue
 
-                    # Construir parámetros
-                    full_nemotecnia = f"{nemotecnia_base}{channel_suffix}"
+                    # Extraer nemotecnia base para el nombre del archivo
+                    nemotecnia_base = self.extract_base_nemotecnia(full_nemotecnia, channel_suffix)
+                    
                     sql_date = self.format_date_for_sql(exec_date_raw)
                     
                     # Nombre de archivo de salida
-                    # NEMOTECNIA1 + EXECUTION_DATE + CHANNEL
+                    # NEMOTECNIA_BASE + EXECUTION_DATE + CHANNEL_SUFFIX
                     filename = f"{nemotecnia_base}{exec_date_raw}{channel_suffix}.txt"
                     file_path = output_dir / filename
-                    
-                    # Validar existencia
-                    if not self._confirm_overwrite(file_path):
-                        logger.info(f"Archivo omitido por el usuario: {filename}")
-                        continue
-                    
                     logger.info(f"Procesando: {full_nemotecnia} para fecha {sql_date}")
                     
                     # Obtener Query
-                    query_template = self.get_query_template(channel_suffix)
+                    query_template = self.get_query_template(channel_suffix, channel_name)
                     query = query_template.format(
                         execution_date=sql_date,
                         full_nemotecnia=full_nemotecnia
@@ -169,18 +176,31 @@ class AudienceProcessor:
                     
                     # Ejecutar Query
                     cursor = db_manager.execute_query(query)
-                    rows = cursor.fetchall()
                     
-                    if not rows:
-                        logger.warning(f"No se encontraron registros para {full_nemotecnia}")
-                        # Crear archivo vacío o saltar? Por ahora creamos vacío para evidenciar proceso
-                        with open(file_path, 'w', encoding='utf-8') as f:
-                            pass
+                    # Obtener encabezados (nombres de columnas)
+                    headers = [desc[0] for desc in cursor.description] if cursor.description else []
+                    
+                    rows = cursor.fetchall()
+                    count = len(rows)
+                    logger.info(f"Registros encontrados: {count}")
+
+                    # Validar cantidad mínima de registros (>= 50)
+                    if count < 50:
+                        logger.warning(f"Registros insuficientes ({count}) para {full_nemotecnia}. Mínimo requerido: 50. Archivo NO generado.")
+                        continue
+
+                    # Validar existencia (solo si cumple el mínimo)
+                    if not self._confirm_overwrite(file_path, count):
+                        logger.info(f"Archivo omitido por el usuario: {filename}")
                         continue
 
                     # Escribir archivo
                     # Separador '|' si hay más de una columna
                     with open(file_path, 'w', encoding='utf-8') as f:
+                        # Escribir encabezados
+                        if headers:
+                            f.write("|".join(headers) + "\n")
+                            
                         for row_data in rows:
                             # Convertir todos los elementos a string y unir con pipe
                             line = "|".join([str(item) if item is not None else '' for item in row_data])

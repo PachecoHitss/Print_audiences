@@ -35,3 +35,215 @@
 2025-12-24 08:17:18,830 - src.database - INFO - Conexión cerrada.
 2025-12-24 08:17:18,831 - src.processor - INFO - Proceso finalizado.
 2025-12-24 08:17:18,833 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:19:58,418 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:19:58,418 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:19:58,434 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:19:58,434 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:20:00,190 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:20:00,192 - src.processor - INFO - Procesando: N_VAS_POS_CDVAPDN_WPP para fecha 2025-12-24
+2025-12-24 08:20:09,299 - src.processor - INFO - Archivo generado: N_VAS_POS_CDVAPDN251224_WPP.txt (423 registros)
+2025-12-24 08:20:09,300 - src.processor - INFO - Procesando: N_VAS_POS_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:20:19,318 - src.processor - INFO - Archivo generado: N_VAS_POS_MUSGRPD251224_WPP.txt (48659 registros)
+2025-12-24 08:20:19,319 - src.processor - INFO - Procesando: N_VAS_PRE_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:20:29,311 - src.processor - INFO - Archivo generado: N_VAS_PRE_MUSGRPD251224_WPP.txt (47853 registros)
+2025-12-24 08:20:29,337 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:20:29,338 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:20:29,342 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:22:55,653 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:22:55,653 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:22:55,658 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:22:55,658 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:22:56,923 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:23:06,623 - src.processor - INFO - Procesando: N_VAS_POS_CDVAPDN_WPP para fecha 2025-12-24
+2025-12-24 08:23:15,730 - src.processor - INFO - Archivo generado: N_VAS_POS_CDVAPDN251224_WPP.txt (423 registros)
+2025-12-24 08:23:17,343 - src.processor - INFO - Procesando: N_VAS_POS_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:23:27,272 - src.processor - INFO - Archivo generado: N_VAS_POS_MUSGRPD251224_WPP.txt (48659 registros)
+2025-12-24 08:24:02,686 - src.processor - INFO - Procesando: N_VAS_PRE_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:24:12,646 - src.processor - INFO - Archivo generado: N_VAS_PRE_MUSGRPD251224_WPP.txt (47853 registros)
+2025-12-24 08:24:12,679 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:24:12,679 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:24:12,681 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:25:38,911 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:25:38,912 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:25:38,916 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:25:38,916 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:25:40,215 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:25:40,216 - src.processor - INFO - Procesando: N_VAS_POS_CDVAPDN_WPP para fecha 2025-12-24
+2025-12-24 08:25:53,631 - src.processor - WARNING - No se encontraron registros para N_VAS_POS_CDVAPDN_WPP
+2025-12-24 08:25:53,632 - src.processor - INFO - Procesando: N_VAS_POS_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:26:06,745 - src.processor - WARNING - No se encontraron registros para N_VAS_POS_MUSGRPD_WPP
+2025-12-24 08:26:06,746 - src.processor - INFO - Procesando: N_VAS_PRE_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:26:18,513 - src.processor - WARNING - No se encontraron registros para N_VAS_PRE_MUSGRPD_WPP
+2025-12-24 08:26:18,554 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:26:18,554 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:26:18,554 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:28:17,488 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:28:17,489 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:28:17,493 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:28:17,493 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:28:18,758 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:28:18,760 - src.processor - INFO - Procesando: N_VAS_POS_CDVAPDN_WPP para fecha 2025-12-24
+2025-12-24 08:28:31,281 - src.processor - INFO - Archivo generado: N_VAS_POS_CDVAPDN251224_WPP.txt (423 registros)
+2025-12-24 08:28:31,282 - src.processor - INFO - Procesando: N_VAS_POS_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:28:48,801 - src.processor - INFO - Archivo generado: N_VAS_POS_MUSGRPD251224_WPP.txt (48659 registros)
+2025-12-24 08:28:48,802 - src.processor - INFO - Procesando: N_VAS_PRE_MUSGRPD_WPP para fecha 2025-12-24
+2025-12-24 08:29:02,600 - src.processor - INFO - Archivo generado: N_VAS_PRE_MUSGRPD251224_WPP.txt (47853 registros)
+2025-12-24 08:29:02,629 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:29:02,629 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:29:02,632 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:35:24,367 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:35:24,367 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:35:24,384 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:35:24,384 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:35:25,689 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:35:25,690 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-25
+2025-12-24 08:35:35,054 - src.processor - WARNING - No se encontraron registros para C_INN_POS_QUINVPY_S0. Archivo NO generado.
+2025-12-24 08:35:35,055 - src.processor - INFO - Procesando: C_INN_PRE_PAYBLRG_S0 para fecha 2025-12-25
+2025-12-24 08:35:44,116 - src.processor - WARNING - No se encontraron registros para C_INN_PRE_PAYBLRG_S0. Archivo NO generado.
+2025-12-24 08:35:44,118 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-25
+2025-12-24 08:35:53,398 - src.processor - WARNING - No se encontraron registros para C_INN_PRE_PAYBPRG_RCS. Archivo NO generado.
+2025-12-24 08:35:53,429 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:35:53,430 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:35:53,430 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:37:24,300 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:37:24,300 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:37:24,305 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:37:24,305 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:37:25,586 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:37:25,587 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-25
+2025-12-24 08:37:25,587 - src.processor - INFO - Ejecutando Query: Select 
+            DISTINCT '57'||right(A.TELE_NUMB,10) TELE_NUMB
+            , B.IDENTIFICACION 
+            from INNOVACION.VW_SENT_CAMPAIGNS_LOG A
+            LEFT JOIN INNOVACION.POTENCIAL_CAMPANA B ON RIGHT(A.TELE_NUMB, 10) = RIGHT(B.TELE_NUMB, 10)
+            WHERE TRUNC (SENT_AT) = DATE '2025-12-25'
+            AND A.NEMOTECNIA = 'C_INN_POS_QUINVPY_S0'
+            and CONTROL_GROUP = 'N'
+            ORDER BY 1
+2025-12-24 08:37:35,292 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 08:37:35,292 - src.processor - WARNING - No se encontraron registros para C_INN_POS_QUINVPY_S0. Archivo NO generado.
+2025-12-24 08:37:35,293 - src.processor - INFO - Procesando: C_INN_PRE_PAYBLRG_S0 para fecha 2025-12-25
+2025-12-24 08:37:35,294 - src.processor - INFO - Ejecutando Query: Select 
+            DISTINCT '57'||right(A.TELE_NUMB,10) TELE_NUMB
+            , B.IDENTIFICACION 
+            from INNOVACION.VW_SENT_CAMPAIGNS_LOG A
+            LEFT JOIN INNOVACION.POTENCIAL_CAMPANA B ON RIGHT(A.TELE_NUMB, 10) = RIGHT(B.TELE_NUMB, 10)
+            WHERE TRUNC (SENT_AT) = DATE '2025-12-25'
+            AND A.NEMOTECNIA = 'C_INN_PRE_PAYBLRG_S0'
+            and CONTROL_GROUP = 'N'
+            ORDER BY 1
+2025-12-24 08:37:44,554 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 08:37:44,555 - src.processor - WARNING - No se encontraron registros para C_INN_PRE_PAYBLRG_S0. Archivo NO generado.
+2025-12-24 08:37:44,556 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-25
+2025-12-24 08:37:44,556 - src.processor - INFO - Ejecutando Query: Select DISTINCT A.TELE_NUMB
+            from INNOVACION.VW_SENT_CAMPAIGNS_LOG A
+            WHERE TRUNC (SENT_AT) = DATE '2025-12-25'
+            and nemotecnia = 'C_INN_PRE_PAYBPRG_RCS'
+            and CONTROL_GROUP = 'N'
+            ORDER BY 1
+2025-12-24 08:37:53,563 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 08:37:53,563 - src.processor - WARNING - No se encontraron registros para C_INN_PRE_PAYBPRG_RCS. Archivo NO generado.
+2025-12-24 08:37:53,589 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:37:53,589 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:37:53,590 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:40:56,815 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:40:56,816 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:40:56,820 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:40:56,820 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:41:00,212 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:41:00,214 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-24
+2025-12-24 08:41:06,485 - src.processor - INFO - Registros encontrados: 1
+2025-12-24 08:41:06,487 - src.processor - INFO - Archivo generado: C_INN_POS_QUINVPY251224_S0.txt (1 registros)
+2025-12-24 08:41:06,488 - src.processor - INFO - Procesando: C_INN_PRE_PAYBLRG_S0 para fecha 2025-12-24
+2025-12-24 08:41:20,419 - src.processor - INFO - Registros encontrados: 285323
+2025-12-24 08:41:20,610 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBLRG251224_S0.txt (285323 registros)
+2025-12-24 08:41:20,611 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-24
+2025-12-24 08:41:30,189 - src.processor - INFO - Registros encontrados: 100622
+2025-12-24 08:41:30,250 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBPRG251224_RCS.txt (100622 registros)
+2025-12-24 08:41:30,274 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:41:30,274 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:41:30,279 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:49:14,366 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:49:14,367 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:49:14,381 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:49:14,381 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:49:16,121 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:49:16,123 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-24
+2025-12-24 08:49:25,177 - src.processor - INFO - Registros encontrados: 1
+2025-12-24 08:49:25,179 - src.processor - INFO - Archivo generado: C_INN_POS_QUINVPY251224_S0.txt (1 registros)
+2025-12-24 08:49:25,180 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-24
+2025-12-24 08:49:36,512 - src.processor - INFO - Registros encontrados: 100622
+2025-12-24 08:49:36,574 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBPRG251224_RCS.txt (100622 registros)
+2025-12-24 08:49:36,575 - src.processor - WARNING - Canal desconocido 'NOTIFICATION_PUSH_COTA' en fila 2. Saltando.
+2025-12-24 08:49:36,575 - src.processor - INFO - Procesando: C_REN_HOG_CNPUNGR_IP para fecha 2025-12-24
+2025-12-24 08:49:45,995 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 08:49:45,996 - src.processor - WARNING - No se encontraron registros para C_REN_HOG_CNPUNGR_IP. Archivo NO generado.
+2025-12-24 08:49:45,996 - src.processor - INFO - Procesando: C_REN_HOG_OTTDNJA_SL para fecha 2025-12-24
+2025-12-24 08:49:54,963 - src.processor - INFO - Registros encontrados: 1259
+2025-12-24 08:49:54,965 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTDNJA251224_SL.txt (1259 registros)
+2025-12-24 08:49:55,015 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:49:55,016 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:49:55,016 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 08:56:31,288 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:56:31,288 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:56:31,303 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:56:31,303 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:56:33,021 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:56:33,022 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-24
+2025-12-24 08:56:42,170 - src.processor - INFO - Registros encontrados: 1
+2025-12-24 08:57:25,818 - src.processor - INFO - Archivo generado: C_INN_POS_QUINVPY251224_S0.txt (1 registros)
+2025-12-24 08:57:25,819 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-24
+2025-12-24 08:57:35,153 - src.processor - INFO - Registros encontrados: 100622
+2025-12-24 08:57:43,665 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBPRG251224_RCS.txt (100622 registros)
+2025-12-24 08:57:43,666 - src.processor - INFO - Procesando: C_REN_HOG_CNPHPND_AP para fecha 2025-12-24
+2025-12-24 08:57:53,058 - src.processor - INFO - Registros encontrados: 41
+2025-12-24 08:57:53,059 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPHPND251224_AP.txt (41 registros)
+2025-12-24 08:57:53,060 - src.processor - INFO - Procesando: C_REN_HOG_CNPUNGR_IP para fecha 2025-12-24
+2025-12-24 08:58:02,230 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 08:58:02,230 - src.processor - WARNING - No se encontraron registros para C_REN_HOG_CNPUNGR_IP. Archivo NO generado.
+2025-12-24 08:58:02,231 - src.processor - INFO - Procesando: C_REN_HOG_OTTDNJA_SL para fecha 2025-12-24
+2025-12-24 08:58:11,289 - src.processor - INFO - Registros encontrados: 1259
+2025-12-24 08:58:17,605 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTDNJA251224_SL.txt (1259 registros)
+2025-12-24 08:58:17,629 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:58:17,630 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:58:17,630 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 09:02:20,719 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 09:02:20,720 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 09:02:20,724 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 09:02:20,724 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 09:02:24,120 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 09:02:24,122 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-24
+2025-12-24 09:02:35,355 - src.processor - INFO - Registros encontrados: 1
+2025-12-24 09:03:06,955 - src.processor - INFO - Archivo generado: C_INN_POS_QUINVPY251224_S0.txt (1 registros)
+2025-12-24 09:03:06,957 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-24
+2025-12-24 09:03:16,312 - src.processor - INFO - Registros encontrados: 100622
+2025-12-24 09:03:20,311 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBPRG251224_RCS.txt (100622 registros)
+2025-12-24 09:03:20,312 - src.processor - INFO - Procesando: C_REN_HOG_CNPHPND_AP para fecha 2025-12-24
+2025-12-24 09:03:35,782 - src.processor - INFO - Registros encontrados: 41
+2025-12-24 09:03:38,500 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPHPND251224_AP.txt (41 registros)
+2025-12-24 09:03:38,501 - src.processor - INFO - Procesando: C_REN_HOG_CNPUNGR_IP para fecha 2025-12-24
+2025-12-24 09:03:56,790 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:03:56,791 - src.processor - WARNING - No se encontraron registros para C_REN_HOG_CNPUNGR_IP. Archivo NO generado.
+2025-12-24 09:03:56,791 - src.processor - INFO - Procesando: C_REN_HOG_OTTDNJA_SL para fecha 2025-12-24
+2025-12-24 09:04:14,847 - src.processor - INFO - Registros encontrados: 1259
+2025-12-24 09:04:17,430 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTDNJA251224_SL.txt (1259 registros)
+2025-12-24 09:04:17,781 - src.database - INFO - Conexión cerrada.
+2025-12-24 09:04:17,782 - src.processor - INFO - Proceso finalizado.
+2025-12-24 09:04:17,783 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 09:07:07,764 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 09:07:07,764 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 09:07:07,768 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 09:07:07,769 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 09:07:09,614 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 09:07:09,615 - src.processor - INFO - Procesando: C_REN_HOG_CNPHPND_AP para fecha 2025-12-24
+2025-12-24 09:07:19,935 - src.processor - INFO - Registros encontrados: 41
+2025-12-24 09:07:19,936 - src.processor - WARNING - Registros insuficientes (41) para C_REN_HOG_CNPHPND_AP. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:07:19,936 - src.processor - INFO - Procesando: C_REN_POS_OTTNSTD_AP para fecha 2025-12-24
+2025-12-24 09:07:36,208 - src.processor - INFO - Registros encontrados: 352093
+2025-12-24 09:07:36,418 - src.processor - INFO - Archivo generado: C_REN_POS_OTTNSTD251224_AP.txt (352093 registros)
+2025-12-24 09:07:36,419 - src.processor - INFO - Procesando: N_VAS_POS_VIDMIMC_AP para fecha 2025-12-24
+2025-12-24 09:07:54,795 - src.processor - INFO - Registros encontrados: 472869
+2025-12-24 09:07:55,077 - src.processor - INFO - Archivo generado: N_VAS_POS_VIDMIMC251224_AP.txt (472869 registros)
+2025-12-24 09:07:55,104 - src.database - INFO - Conexión cerrada.
+2025-12-24 09:07:55,104 - src.processor - INFO - Proceso finalizado.
+2025-12-24 09:07:55,121 - Main - INFO - --- Ejecución completada exitosamente ---
