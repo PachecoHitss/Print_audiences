@@ -1,0 +1,37 @@
+2025-12-24 08:09:46,671 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:09:48,392 - src.database - ERROR - Error conectando a Teradata: [Version 20.0.0.48] [Session 1411609] [Teradata Database] [Error 8017] The UserId, Password or Account is invalid.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:100
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:207
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:223
+ at gosqldriver/teradatasql.(*teradataConnection).makeDatabaseError ErrorUtil.go:235
+ at gosqldriver/teradatasql.(*teradataConnection).logonController LogonController.go:436
+ at gosqldriver/teradatasql.newTeradataConnection TeradataConnection.go:168
+ at gosqldriver/teradatasql.(*teradataDriver).Open TeradataDriver.go:32
+ at database/sql.dsnConnector.Connect sql.go:809
+ at database/sql.(*DB).conn sql.go:1431
+ at database/sql.(*DB).Conn.func1 sql.go:1950
+ at database/sql.(*DB).retry sql.go:1576
+ at database/sql.(*DB).Conn sql.go:1949
+ at main.goCreateConnection goside.go:323
+ at _cgoexp_c43d071e9719_goCreateConnection _cgo_gotypes.go:268
+ at runtime.cgocallbackg1 cgocall.go:446
+ at runtime.cgocallbackg cgocall.go:350
+ at runtime.cgocallback asm_amd64.s:1082
+ at runtime.goexit asm_amd64.s:1693
+2025-12-24 08:12:16,393 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:12:18,474 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:12:18,532 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:16:49,984 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 08:16:49,984 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 08:16:49,997 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 08:16:49,998 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 08:16:51,302 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 08:16:51,308 - src.processor - INFO - Procesando: N_VAS_POS_CDVAPDNWHATSAPP para fecha 2025-12-24
+2025-12-24 08:17:01,476 - src.processor - WARNING - No se encontraron registros para N_VAS_POS_CDVAPDNWHATSAPP
+2025-12-24 08:17:01,478 - src.processor - INFO - Procesando: N_VAS_POS_MUSGRPDWHATSAPP para fecha 2025-12-24
+2025-12-24 08:17:10,682 - src.processor - WARNING - No se encontraron registros para N_VAS_POS_MUSGRPDWHATSAPP
+2025-12-24 08:17:10,684 - src.processor - INFO - Procesando: N_VAS_PRE_MUSGRPDWHATSAPP para fecha 2025-12-24
+2025-12-24 08:17:18,812 - src.processor - WARNING - No se encontraron registros para N_VAS_PRE_MUSGRPDWHATSAPP
+2025-12-24 08:17:18,830 - src.database - INFO - Conexión cerrada.
+2025-12-24 08:17:18,831 - src.processor - INFO - Proceso finalizado.
+2025-12-24 08:17:18,833 - Main - INFO - --- Ejecución completada exitosamente ---

@@ -25,8 +25,8 @@ class DatabaseManager:
             self.connection = teradatasql.connect(
                 host=self.creds['TD_HOST'],
                 user=self.creds['TD_USER'],
-                password=self.creds['TD_PASSWORD'],
-                logmech='LDAP'  # Asumo LDAP por ser corporativo, si falla probaremos sin esto o con TD2
+                password=self.creds['TD_PASSWORD']
+                # logmech='LDAP' eliminado para probar autenticación estándar (TD2)
             )
             logger.info("Conexión a Teradata exitosa.")
         except Exception as e:
