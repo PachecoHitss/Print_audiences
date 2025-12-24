@@ -247,3 +247,215 @@
 2025-12-24 09:07:55,104 - src.database - INFO - Conexión cerrada.
 2025-12-24 09:07:55,104 - src.processor - INFO - Proceso finalizado.
 2025-12-24 09:07:55,121 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 09:09:52,385 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 09:09:52,385 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 09:09:52,390 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 09:09:52,390 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 09:09:54,531 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 09:09:54,532 - src.processor - INFO - Procesando: C_VEN_CON_CABNAVI_RCS para fecha 2025-12-24
+2025-12-24 09:10:12,238 - src.processor - INFO - Registros encontrados: 1
+2025-12-24 09:10:12,238 - src.processor - WARNING - Registros insuficientes (1) para C_VEN_CON_CABNAVI_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:10:12,240 - src.processor - INFO - Procesando: C_VEN_PRE_MIGCSBS_AP para fecha 2025-12-24
+2025-12-24 09:10:27,060 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:10:27,060 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGCSBS_AP. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:10:27,062 - src.processor - INFO - Procesando: C_VEN_PRE_MIGGYJC_RCS para fecha 2025-12-24
+2025-12-24 09:10:38,091 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:10:38,091 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGGYJC_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:10:38,092 - src.processor - INFO - Procesando: C_VEN_PRE_MIGHORN_RCS para fecha 2025-12-24
+2025-12-24 09:10:44,708 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:10:44,709 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGHORN_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:10:44,710 - src.processor - INFO - Procesando: C_VEN_PRE_MIGPOPC_RCS para fecha 2025-12-24
+2025-12-24 09:10:51,480 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:10:51,480 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGPOPC_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:10:51,481 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_RCS para fecha 2025-12-24
+2025-12-24 09:11:00,991 - src.processor - INFO - Registros encontrados: 100622
+2025-12-24 09:11:01,057 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBPRG251224_RCS.txt (100622 registros)
+2025-12-24 09:11:01,058 - src.processor - INFO - Procesando: C_REN_HOG_CNPHBT3_RCS para fecha 2025-12-24
+2025-12-24 09:11:11,098 - src.processor - INFO - Registros encontrados: 10
+2025-12-24 09:11:11,098 - src.processor - WARNING - Registros insuficientes (10) para C_REN_HOG_CNPHBT3_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:11:11,098 - src.processor - INFO - Procesando: C_REN_HOG_CNPHPND_RCS para fecha 2025-12-24
+2025-12-24 09:11:20,316 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:11:20,316 - src.processor - WARNING - Registros insuficientes (0) para C_REN_HOG_CNPHPND_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:11:20,317 - src.processor - INFO - Procesando: C_REN_HOG_CNPOBVD_RCS para fecha 2025-12-24
+2025-12-24 09:11:37,724 - src.processor - INFO - Registros encontrados: 5556
+2025-12-24 09:11:37,730 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPOBVD251224_RCS.txt (5556 registros)
+2025-12-24 09:11:37,731 - src.processor - INFO - Procesando: C_REN_HOG_CNPWFLD_RCS para fecha 2025-12-24
+2025-12-24 09:11:54,674 - src.processor - INFO - Registros encontrados: 1200
+2025-12-24 09:11:54,677 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPWFLD251224_RCS.txt (1200 registros)
+2025-12-24 09:11:54,678 - src.processor - INFO - Procesando: C_REN_HOG_OTTHGND_RCS para fecha 2025-12-24
+2025-12-24 09:12:10,663 - src.processor - INFO - Registros encontrados: 8
+2025-12-24 09:12:10,663 - src.processor - WARNING - Registros insuficientes (8) para C_REN_HOG_OTTHGND_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:12:10,664 - src.processor - INFO - Procesando: C_REN_HOG_OTTPR10_RCS para fecha 2025-12-24
+2025-12-24 09:12:24,734 - src.processor - INFO - Registros encontrados: 296
+2025-12-24 09:12:24,736 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTPR10251224_RCS.txt (296 registros)
+2025-12-24 09:12:24,737 - src.processor - INFO - Procesando: C_REN_POS_OTTHGND_RCS para fecha 2025-12-24
+2025-12-24 09:12:38,808 - src.processor - INFO - Registros encontrados: 169
+2025-12-24 09:12:38,810 - src.processor - INFO - Archivo generado: C_REN_POS_OTTHGND251224_RCS.txt (169 registros)
+2025-12-24 09:12:38,811 - src.processor - INFO - Procesando: C_REN_POS_OTTMAT3_RCS para fecha 2025-12-24
+2025-12-24 09:12:48,070 - src.processor - INFO - Registros encontrados: 89
+2025-12-24 09:12:48,072 - src.processor - INFO - Archivo generado: C_REN_POS_OTTMAT3251224_RCS.txt (89 registros)
+2025-12-24 09:12:48,072 - src.processor - INFO - Procesando: C_REN_POS_OTTNSTD_RCS para fecha 2025-12-24
+2025-12-24 09:12:57,079 - src.processor - INFO - Registros encontrados: 3
+2025-12-24 09:12:57,079 - src.processor - WARNING - Registros insuficientes (3) para C_REN_POS_OTTNSTD_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:12:57,080 - src.processor - INFO - Procesando: C_REN_POS_OTTPR10_RCS para fecha 2025-12-24
+2025-12-24 09:13:10,477 - src.processor - INFO - Registros encontrados: 89535
+2025-12-24 09:13:10,569 - src.processor - INFO - Archivo generado: C_REN_POS_OTTPR10251224_RCS.txt (89535 registros)
+2025-12-24 09:13:10,570 - src.processor - INFO - Procesando: C_REN_POS_TREHGNV_RCS para fecha 2025-12-24
+2025-12-24 09:13:22,901 - src.processor - INFO - Registros encontrados: 8628
+2025-12-24 09:13:22,908 - src.processor - INFO - Archivo generado: C_REN_POS_TREHGNV251224_RCS.txt (8628 registros)
+2025-12-24 09:13:22,927 - src.database - INFO - Conexión cerrada.
+2025-12-24 09:13:22,928 - src.processor - INFO - Proceso finalizado.
+2025-12-24 09:13:22,929 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 09:14:18,590 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 09:14:18,590 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 09:14:18,595 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 09:14:18,595 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 09:14:19,921 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 09:14:19,923 - src.processor - INFO - Procesando: C_AUT_HOG_USOPSSA_S0 para fecha 2025-12-24
+2025-12-24 09:14:28,955 - src.processor - INFO - Registros encontrados: 2769
+2025-12-24 09:14:28,959 - src.processor - INFO - Archivo generado: C_AUT_HOG_USOPSSA251224_S0.txt (2769 registros)
+2025-12-24 09:14:28,960 - src.processor - INFO - Procesando: C_AUT_POS_USOPSSA_S0 para fecha 2025-12-24
+2025-12-24 09:14:39,183 - src.processor - INFO - Registros encontrados: 76
+2025-12-24 09:14:39,184 - src.processor - INFO - Archivo generado: C_AUT_POS_USOPSSA251224_S0.txt (76 registros)
+2025-12-24 09:14:39,185 - src.processor - INFO - Procesando: C_VEN_PRE_HG89KNA_S0 para fecha 2025-12-24
+2025-12-24 09:14:55,315 - src.processor - INFO - Registros encontrados: 182573
+2025-12-24 09:14:55,432 - src.processor - INFO - Archivo generado: C_VEN_PRE_HG89KNA251224_S0.txt (182573 registros)
+2025-12-24 09:14:55,433 - src.processor - INFO - Procesando: C_INN_POS_AFICSEA_S0 para fecha 2025-12-24
+2025-12-24 09:15:05,870 - src.processor - INFO - Registros encontrados: 3
+2025-12-24 09:15:05,871 - src.processor - WARNING - Registros insuficientes (3) para C_INN_POS_AFICSEA_S0. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:15:05,871 - src.processor - INFO - Procesando: C_INN_POS_AFICSGB_S0 para fecha 2025-12-24
+2025-12-24 09:15:15,220 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:15:15,220 - src.processor - WARNING - Registros insuficientes (0) para C_INN_POS_AFICSGB_S0. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:15:15,220 - src.processor - INFO - Procesando: C_INN_POS_QUINVPY_S0 para fecha 2025-12-24
+2025-12-24 09:15:24,924 - src.processor - INFO - Registros encontrados: 1
+2025-12-24 09:15:24,925 - src.processor - WARNING - Registros insuficientes (1) para C_INN_POS_QUINVPY_S0. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:15:24,925 - src.processor - INFO - Procesando: C_INN_PRE_PAYBLRG_S0 para fecha 2025-12-24
+2025-12-24 09:15:45,515 - src.processor - INFO - Registros encontrados: 285323
+2025-12-24 09:15:45,692 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBLRG251224_S0.txt (285323 registros)
+2025-12-24 09:15:45,693 - src.processor - INFO - Procesando: C_REN_HOG_OTTPR10_S0 para fecha 2025-12-24
+2025-12-24 09:16:04,096 - src.processor - INFO - Registros encontrados: 95796
+2025-12-24 09:16:04,155 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTPR10251224_S0.txt (95796 registros)
+2025-12-24 09:16:04,155 - src.processor - INFO - Procesando: C_REN_POS_OTTPR10_S0 para fecha 2025-12-24
+2025-12-24 09:16:18,368 - src.processor - INFO - Registros encontrados: 39273
+2025-12-24 09:16:18,393 - src.processor - INFO - Archivo generado: C_REN_POS_OTTPR10251224_S0.txt (39273 registros)
+2025-12-24 09:16:18,394 - src.processor - INFO - Procesando: C_REN_POS_TREGHOG_S0 para fecha 2025-12-24
+2025-12-24 09:16:35,453 - src.processor - INFO - Registros encontrados: 1383
+2025-12-24 09:16:35,456 - src.processor - INFO - Archivo generado: C_REN_POS_TREGHOG251224_S0.txt (1383 registros)
+2025-12-24 09:16:35,456 - src.processor - INFO - Procesando: N_AUT_HOG_USOPSSC_S0 para fecha 2025-12-24
+2025-12-24 09:16:47,283 - src.processor - INFO - Registros encontrados: 193760
+2025-12-24 09:16:47,400 - src.processor - INFO - Archivo generado: N_AUT_HOG_USOPSSC251224_S0.txt (193760 registros)
+2025-12-24 09:16:47,401 - src.processor - INFO - Procesando: N_AUT_POS_USOPSSE_S0 para fecha 2025-12-24
+2025-12-24 09:16:58,601 - src.processor - INFO - Registros encontrados: 177483
+2025-12-24 09:16:58,716 - src.processor - INFO - Archivo generado: N_AUT_POS_USOPSSE251224_S0.txt (177483 registros)
+2025-12-24 09:16:58,717 - src.processor - INFO - Procesando: N_VAS_POS_VIDMIMP_S0 para fecha 2025-12-24
+2025-12-24 09:17:24,177 - src.processor - INFO - Registros encontrados: 845522
+2025-12-24 09:17:24,746 - src.processor - INFO - Archivo generado: N_VAS_POS_VIDMIMP251224_S0.txt (845522 registros)
+2025-12-24 09:17:24,774 - src.database - INFO - Conexión cerrada.
+2025-12-24 09:17:24,775 - src.processor - INFO - Proceso finalizado.
+2025-12-24 09:17:24,814 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 09:18:06,795 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 09:18:06,795 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 09:18:06,799 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 09:18:06,799 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 09:18:08,223 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 09:18:08,224 - src.processor - INFO - Procesando: C_AUT_HOG_USOPSSB_SL para fecha 2025-12-24
+2025-12-24 09:18:22,561 - src.processor - INFO - Registros encontrados: 2374
+2025-12-24 09:18:22,563 - src.processor - INFO - Archivo generado: C_AUT_HOG_USOPSSB251224_SL.txt (2374 registros)
+2025-12-24 09:18:22,564 - src.processor - INFO - Procesando: C_AUT_POS_USOPSSA_SL para fecha 2025-12-24
+2025-12-24 09:18:34,820 - src.processor - INFO - Registros encontrados: 12959
+2025-12-24 09:18:34,829 - src.processor - INFO - Archivo generado: C_AUT_POS_USOPSSA251224_SL.txt (12959 registros)
+2025-12-24 09:18:34,829 - src.processor - INFO - Procesando: C_VEN_PRE_HG89KNB_SL para fecha 2025-12-24
+2025-12-24 09:18:52,186 - src.processor - INFO - Registros encontrados: 286277
+2025-12-24 09:18:52,351 - src.processor - INFO - Archivo generado: C_VEN_PRE_HG89KNB251224_SL.txt (286277 registros)
+2025-12-24 09:18:52,351 - src.processor - INFO - Procesando: C_VEN_PRE_MIGGYJC_SL para fecha 2025-12-24
+2025-12-24 09:19:02,875 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:19:02,875 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGGYJC_SL. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:19:02,875 - src.processor - INFO - Procesando: C_VEN_PRE_MIGHOGC_SL para fecha 2025-12-24
+2025-12-24 09:19:13,459 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:19:13,460 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGHOGC_SL. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:19:13,461 - src.processor - INFO - Procesando: C_VEN_PRE_MIGHORC_SL para fecha 2025-12-24
+2025-12-24 09:19:23,548 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:19:23,548 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGHORC_SL. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:19:23,550 - src.processor - INFO - Procesando: C_VEN_PRE_MIGPOPC_SL para fecha 2025-12-24
+2025-12-24 09:19:33,545 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:19:33,545 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_PRE_MIGPOPC_SL. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:19:33,546 - src.processor - INFO - Procesando: C_INN_POS_AFICSGC_SL para fecha 2025-12-24
+2025-12-24 09:19:47,001 - src.processor - INFO - Registros encontrados: 17573
+2025-12-24 09:19:47,016 - src.processor - INFO - Archivo generado: C_INN_POS_AFICSGC251224_SL.txt (17573 registros)
+2025-12-24 09:19:47,017 - src.processor - INFO - Procesando: C_INN_POS_AFITTNC_SL para fecha 2025-12-24
+2025-12-24 09:19:57,372 - src.processor - INFO - Registros encontrados: 93
+2025-12-24 09:19:57,373 - src.processor - INFO - Archivo generado: C_INN_POS_AFITTNC251224_SL.txt (93 registros)
+2025-12-24 09:19:57,374 - src.processor - INFO - Procesando: C_INN_PRE_AFITTNC_SL para fecha 2025-12-24
+2025-12-24 09:20:06,838 - src.processor - INFO - Registros encontrados: 45340
+2025-12-24 09:20:06,868 - src.processor - INFO - Archivo generado: C_INN_PRE_AFITTNC251224_SL.txt (45340 registros)
+2025-12-24 09:20:06,868 - src.processor - INFO - Procesando: C_VEN_EQU_CPTPOAH_SL para fecha 2025-12-24
+2025-12-24 09:20:14,850 - src.processor - INFO - Registros encontrados: 1103
+2025-12-24 09:20:14,853 - src.processor - INFO - Archivo generado: C_VEN_EQU_CPTPOAH251224_SL.txt (1103 registros)
+2025-12-24 09:20:14,853 - src.processor - INFO - Procesando: C_VEN_EQU_CPTPOAP_SL para fecha 2025-12-24
+2025-12-24 09:20:23,208 - src.processor - INFO - Registros encontrados: 0
+2025-12-24 09:20:23,209 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_EQU_CPTPOAP_SL. Mínimo requerido: 50. Archivo NO generado.
+2025-12-24 09:20:23,209 - src.processor - INFO - Procesando: C_INN_PRE_PAYBPRG_SL para fecha 2025-12-24
+2025-12-24 09:20:32,044 - src.processor - INFO - Registros encontrados: 18040
+2025-12-24 09:20:32,055 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYBPRG251224_SL.txt (18040 registros)
+2025-12-24 09:20:32,055 - src.processor - INFO - Procesando: C_REN_HOG_CNPUGRA_SL para fecha 2025-12-24
+2025-12-24 09:20:41,683 - src.processor - INFO - Registros encontrados: 1702
+2025-12-24 09:20:41,687 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPUGRA251224_SL.txt (1702 registros)
+2025-12-24 09:20:41,689 - src.processor - INFO - Procesando: C_REN_HOG_OTTDNJA_SL para fecha 2025-12-24
+2025-12-24 09:20:53,043 - src.processor - INFO - Registros encontrados: 1259
+2025-12-24 09:20:53,046 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTDNJA251224_SL.txt (1259 registros)
+2025-12-24 09:20:53,047 - src.processor - INFO - Procesando: C_REN_HOG_OTTHNDA_SL para fecha 2025-12-24
+2025-12-24 09:21:03,416 - src.processor - INFO - Registros encontrados: 170
+2025-12-24 09:21:03,417 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTHNDA251224_SL.txt (170 registros)
+2025-12-24 09:21:03,418 - src.processor - INFO - Procesando: C_REN_HOG_OTTMT3A_SL para fecha 2025-12-24
+2025-12-24 09:21:15,505 - src.processor - INFO - Registros encontrados: 67
+2025-12-24 09:21:15,507 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTMT3A251224_SL.txt (67 registros)
+2025-12-24 09:21:15,508 - src.processor - INFO - Procesando: C_REN_HOG_OTTPR10_SL para fecha 2025-12-24
+2025-12-24 09:21:41,706 - src.processor - INFO - Registros encontrados: 798398
+2025-12-24 09:21:42,213 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTPR10251224_SL.txt (798398 registros)
+2025-12-24 09:21:42,214 - src.processor - INFO - Procesando: C_REN_HOG_OTTSTDA_SL para fecha 2025-12-24
+2025-12-24 09:21:48,151 - src.processor - INFO - Registros encontrados: 9917
+2025-12-24 09:21:48,159 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTSTDA251224_SL.txt (9917 registros)
+2025-12-24 09:21:48,160 - src.processor - INFO - Procesando: C_REN_POS_OTTHNDB_SL para fecha 2025-12-24
+2025-12-24 09:21:53,773 - src.processor - INFO - Registros encontrados: 1888
+2025-12-24 09:21:53,776 - src.processor - INFO - Archivo generado: C_REN_POS_OTTHNDB251224_SL.txt (1888 registros)
+2025-12-24 09:21:53,777 - src.processor - INFO - Procesando: C_REN_POS_OTTPR10_SL para fecha 2025-12-24
+2025-12-24 09:22:13,431 - src.processor - INFO - Registros encontrados: 739473
+2025-12-24 09:22:13,939 - src.processor - INFO - Archivo generado: C_REN_POS_OTTPR10251224_SL.txt (739473 registros)
+2025-12-24 09:22:13,940 - src.processor - INFO - Procesando: C_REN_POS_OTTWLDA_SL para fecha 2025-12-24
+2025-12-24 09:22:25,615 - src.processor - INFO - Registros encontrados: 209502
+2025-12-24 09:22:25,777 - src.processor - INFO - Archivo generado: C_REN_POS_OTTWLDA251224_SL.txt (209502 registros)
+2025-12-24 09:22:25,778 - src.processor - INFO - Procesando: C_REN_POS_TRESAL_SL para fecha 2025-12-24
+2025-12-24 09:22:31,892 - src.processor - INFO - Registros encontrados: 25201
+2025-12-24 09:22:31,910 - src.processor - INFO - Archivo generado: C_REN_POS_TRESAL251224_SL.txt (25201 registros)
+2025-12-24 09:22:31,911 - src.processor - INFO - Procesando: N_AUT_HOG_USOPSSD_SL para fecha 2025-12-24
+2025-12-24 09:22:40,875 - src.processor - INFO - Registros encontrados: 184536
+2025-12-24 09:22:40,991 - src.processor - INFO - Archivo generado: N_AUT_HOG_USOPSSD251224_SL.txt (184536 registros)
+2025-12-24 09:22:40,991 - src.processor - INFO - Procesando: N_AUT_POS_USOPSSD_SL para fecha 2025-12-24
+2025-12-24 09:22:49,229 - src.processor - INFO - Registros encontrados: 147875
+2025-12-24 09:22:49,347 - src.processor - INFO - Archivo generado: N_AUT_POS_USOPSSD251224_SL.txt (147875 registros)
+2025-12-24 09:22:49,348 - src.processor - INFO - Procesando: N_VAS_HOG_VIDMIMP_SL para fecha 2025-12-24
+2025-12-24 09:23:05,406 - src.processor - INFO - Registros encontrados: 423245
+2025-12-24 09:23:05,659 - src.processor - INFO - Archivo generado: N_VAS_HOG_VIDMIMP251224_SL.txt (423245 registros)
+2025-12-24 09:23:05,680 - src.database - INFO - Conexión cerrada.
+2025-12-24 09:23:05,680 - src.processor - INFO - Proceso finalizado.
+2025-12-24 09:23:05,697 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-24 09:49:39,090 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-24 09:49:39,090 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-24 09:49:39,094 - src.processor - INFO - Directorio de salida: D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas\20251224
+2025-12-24 09:49:39,094 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-24 09:49:40,809 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-24 09:49:40,810 - src.processor - INFO - Procesando: C_REN_HOG_CNPUNGR_IP para fecha 2025-12-24
+2025-12-24 09:49:59,114 - src.processor - INFO - Registros encontrados: 538241
+2025-12-24 09:49:59,533 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPUNGR251224_IP.txt (538241 registros)
+2025-12-24 09:49:59,534 - src.processor - INFO - Procesando: C_REN_HOG_OTTDINJ_IP para fecha 2025-12-24
+2025-12-24 09:50:18,070 - src.processor - INFO - Registros encontrados: 500911
+2025-12-24 09:50:18,470 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTDINJ251224_IP.txt (500911 registros)
+2025-12-24 09:50:18,471 - src.processor - INFO - Procesando: C_REN_HOG_OTTHGND_IP para fecha 2025-12-24
+2025-12-24 09:50:24,346 - src.processor - INFO - Registros encontrados: 325
+2025-12-24 09:50:24,348 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTHGND251224_IP.txt (325 registros)
+2025-12-24 09:50:24,349 - src.processor - INFO - Procesando: C_REN_POS_OTTHGND_IP para fecha 2025-12-24
+2025-12-24 09:50:30,614 - src.processor - INFO - Registros encontrados: 3639
+2025-12-24 09:50:30,618 - src.processor - INFO - Archivo generado: C_REN_POS_OTTHGND251224_IP.txt (3639 registros)
+2025-12-24 09:50:30,652 - src.database - INFO - Conexión cerrada.
+2025-12-24 09:50:30,653 - src.processor - INFO - Proceso finalizado.
+2025-12-24 09:50:30,653 - Main - INFO - --- Ejecución completada exitosamente ---
