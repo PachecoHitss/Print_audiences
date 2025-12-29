@@ -1311,3 +1311,64 @@
 2025-12-26 15:42:26,878 - src.database - INFO - Conexión cerrada.
 2025-12-26 15:42:26,878 - src.processor - INFO - Proceso finalizado.
 2025-12-26 15:42:26,908 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-29 08:27:58,895 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-29 08:27:58,895 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-29 08:27:58,907 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-29 08:28:00,708 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-29 08:28:00,715 - src.processor - INFO - Procesando: C_REN_POS_OTTPRT3_AP para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 08:28:08,791 - src.processor - INFO - Registros encontrados: 4915
+2025-12-29 08:28:19,563 - src.processor - INFO - Archivo omitido por el usuario: C_REN_POS_OTTPRT3251229_AP.txt
+2025-12-29 08:28:19,564 - src.processor - INFO - Procesando: C_REN_POS_OTTPRT3_RCS para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 08:28:30,336 - src.processor - INFO - Registros encontrados: 1
+2025-12-29 08:28:30,337 - src.processor - WARNING - Registros insuficientes (1) para C_REN_POS_OTTPRT3_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-29 08:28:30,338 - src.processor - INFO - Procesando: C_REN_POS_OTTPT3B_SL para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 08:28:43,031 - src.processor - INFO - Registros encontrados: 166546
+2025-12-29 08:28:53,213 - src.processor - INFO - Archivo omitido por el usuario: C_REN_POS_OTTPT3B251229_SL.txt
+2025-12-29 08:28:53,214 - src.processor - INFO - Procesando: C_REN_POS_OTTWLDB_SL para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 08:29:03,487 - src.processor - INFO - Registros encontrados: 41170
+2025-12-29 08:29:12,203 - src.processor - INFO - Archivo omitido por el usuario: C_REN_POS_OTTWLDB251229_SL.txt
+2025-12-29 08:29:12,204 - src.processor - INFO - Procesando: C_REN_POS_OTTWPLD_RCS para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 08:29:17,939 - src.processor - INFO - Registros encontrados: 0
+2025-12-29 08:29:17,940 - src.processor - WARNING - Registros insuficientes (0) para C_REN_POS_OTTWPLD_RCS. Mínimo requerido: 50. Archivo NO generado.
+2025-12-29 08:29:17,963 - src.database - INFO - Conexión cerrada.
+2025-12-29 08:29:17,964 - src.processor - INFO - Proceso finalizado.
+2025-12-29 08:29:17,967 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-29 09:59:08,332 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-29 09:59:08,332 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-29 09:59:08,337 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-29 09:59:10,335 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-29 09:59:10,336 - src.processor - INFO - Procesando: C_REN_HOG_CNPHPOI_S0 para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 09:59:30,980 - src.processor - INFO - Registros encontrados: 555555
+2025-12-29 09:59:41,692 - src.processor - INFO - Archivo generado: C_REN_HOG_CNPHPOI251229_S0.txt (555555 registros)
+2025-12-29 09:59:41,693 - src.processor - INFO - Procesando: C_REN_HOG_OTTPR10_S0 para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 09:59:56,229 - src.processor - INFO - Registros encontrados: 444444
+2025-12-29 09:59:56,495 - src.processor - INFO - Archivo generado: C_REN_HOG_OTTPR10251229_S0.txt (444444 registros)
+2025-12-29 09:59:56,495 - src.processor - INFO - Procesando: C_REN_POS_OTTPR10_S0 para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 10:00:12,861 - src.processor - INFO - Registros encontrados: 555556
+2025-12-29 10:00:13,186 - src.processor - INFO - Archivo generado: C_REN_POS_OTTPR10251229_S0.txt (555556 registros)
+2025-12-29 10:00:13,222 - src.database - INFO - Conexión cerrada.
+2025-12-29 10:00:13,222 - src.processor - INFO - Proceso finalizado.
+2025-12-29 10:00:13,244 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-29 10:34:07,695 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-29 10:34:07,695 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-29 10:34:07,699 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-29 10:34:08,992 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-29 10:34:08,994 - src.processor - INFO - Procesando: C_INN_PRE_PAYRTRG_SL para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 10:34:15,308 - src.processor - INFO - Registros encontrados: 28836
+2025-12-29 10:34:23,401 - src.processor - INFO - Archivo generado: C_INN_PRE_PAYRTRG251229_SL.txt (28836 registros)
+2025-12-29 10:34:23,425 - src.database - INFO - Conexión cerrada.
+2025-12-29 10:34:23,426 - src.processor - INFO - Proceso finalizado.
+2025-12-29 10:34:23,427 - Main - INFO - --- Ejecución completada exitosamente ---
+2025-12-29 12:20:52,191 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2025-12-29 12:20:52,191 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2025-12-29 12:20:52,200 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2025-12-29 12:20:54,025 - src.database - INFO - Conexión a Teradata exitosa.
+2025-12-29 12:20:54,032 - src.processor - INFO - Procesando: C_REN_HOG_CNLLTNV_S0 para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 12:21:00,784 - src.processor - INFO - Registros encontrados: 55555
+2025-12-29 12:21:00,818 - src.processor - INFO - Archivo generado: C_REN_HOG_CNLLTNV251229_S0.txt (55555 registros)
+2025-12-29 12:21:00,820 - src.processor - INFO - Procesando: C_REN_HOG_CNLLTNV_SL para fecha 2025-12-29 en carpeta 20251229
+2025-12-29 12:21:07,124 - src.processor - INFO - Registros encontrados: 22859
+2025-12-29 12:21:07,133 - src.processor - INFO - Archivo generado: C_REN_HOG_CNLLTNV251229_SL.txt (22859 registros)
+2025-12-29 12:21:07,175 - src.database - INFO - Conexión cerrada.
+2025-12-29 12:21:07,176 - src.processor - INFO - Proceso finalizado.
+2025-12-29 12:21:07,178 - Main - INFO - --- Ejecución completada exitosamente ---
