@@ -8,10 +8,13 @@ from src.database import db_manager
 logger = logging.getLogger(__name__)
 
 class AudienceProcessor:
-    def __init__(self):
+    def __init__(self, interactive=True, force_overwrite=False):
         # Rutas base (ajustar según entorno real si es necesario)
         self.input_path = Path(r"D:\LABORAL\Projects\Project_A\data\printAudiencesData\PrintAudiencesData.csv")
-        self.output_base_path = Path(r"D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas")
+        self.output_base_path = Path(r"D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Gerencia de desarrollo de producto digital y analítica - FV_GROWTH\Bases_Certificadas\Audiencias\especificas")
+        self.servicio_base_path = Path(r"D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Gerencia de desarrollo de producto digital y analítica - FV_GROWTH\Bases_Certificadas\Audiencias\Notificacion_Servicio")
+        self.interactive = interactive
+        self.force_overwrite = force_overwrite
         
     def read_input_file(self):
         """Lee el archivo CSV de entrada."""
@@ -87,6 +90,14 @@ class AudienceProcessor:
         """Solicita confirmación al usuario si el archivo ya existe."""
         if not file_path.exists():
             return True
+            
+        if self.force_overwrite:
+            logger.info(f"Sobrescribiendo archivo existente por configuración: {file_path.name}")
+            return True
+            
+        if not self.interactive:
+            logger.info(f"Omitiendo archivo existente en modo no interactivo: {file_path.name}")
+            return False
         
         print(f"\n[ALERTA] El archivo ya existe: {file_path.name}")
         print(f"       El NUEVO archivo tendría {new_count} registros.")
@@ -149,7 +160,12 @@ class AudienceProcessor:
                         logger.error(f"Fecha inválida en fila {index}: {exec_date_raw}. Saltando.")
                         continue
 
-                    output_dir = self.output_base_path / folder_name
+
+                    # Determinar ruta según tipo de audiencia
+                    if full_nemotecnia.startswith("N_"):
+                        output_dir = self.servicio_base_path / folder_name
+                    else:
+                        output_dir = self.output_base_path / folder_name
                     # Crear carpeta si no existe (idempotente)
                     output_dir.mkdir(parents=True, exist_ok=True)
 
