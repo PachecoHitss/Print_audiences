@@ -4,7 +4,6 @@ import logging
 import argparse
 from src.processor import AudienceProcessor
 
-# Configuración global de logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -25,13 +24,10 @@ def main():
     logger.info("--- Iniciando Sistema de Generación de Audiencias ---")
     
     try:
-        # Si se usa force, asumimos modo automático también (no preguntar)
         is_interactive = not (args.auto or args.force)
-        
         processor = AudienceProcessor(interactive=is_interactive, force_overwrite=args.force)
         processor.process_audiences()
         logger.info("--- Ejecución completada exitosamente ---")
-        
     except FileNotFoundError as e:
         logger.error(f"Error de archivo: {e}")
         sys.exit(1)
