@@ -3436,3 +3436,217 @@ Caused by write tcp 10.107.146.101:60597->100.123.38.34:1025: wsasend: Se ha for
 2026-03-02 10:21:05,412 - src.database - INFO - Conexión cerrada.
 2026-03-02 10:21:05,413 - src.processor - INFO - Proceso finalizado.
 2026-03-02 10:21:05,417 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 11:24:24,526 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 11:24:24,527 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 11:24:24,531 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 11:24:26,016 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 11:24:26,018 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFE_EP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:24:26,556 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:24:26,556 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF89KFE_EP. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:24:26,557 - src.processor - INFO - Procesando: C_VEN_CON_OF41FEE_EP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:24:27,126 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:24:27,127 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF41FEE_EP. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:24:27,127 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFE_IP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:24:35,276 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:24:35,276 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF89KFE_IP. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:24:35,278 - src.processor - INFO - Procesando: C_VEN_CON_OF41FEE_IP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:24:43,008 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:24:43,008 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF41FEE_IP. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:24:43,010 - src.processor - INFO - Procesando: C_VEN_CON_OF89FEC_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:25:10,316 - src.processor - INFO - Registros encontrados: 839932
+2026-03-02 11:25:10,729 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89FEC260302_AP.txt (839932 registros)
+2026-03-02 11:25:10,729 - src.processor - INFO - Procesando: C_VEN_CON_O539FPB_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:25:18,228 - src.processor - INFO - Registros encontrados: 793
+2026-03-02 11:25:18,228 - src.processor - INFO - Archivo generado: C_VEN_CON_O539FPB260302_AP.txt (793 registros)
+2026-03-02 11:25:18,228 - src.processor - INFO - Procesando: C_VEN_CON_OF89FES_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:25:38,161 - src.processor - INFO - Registros encontrados: 419267
+2026-03-02 11:25:38,441 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89FES260302_AP.txt (419267 registros)
+2026-03-02 11:25:38,442 - src.processor - INFO - Procesando: C_VEN_CON_OF41FES_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:25:46,544 - src.processor - INFO - Registros encontrados: 12920
+2026-03-02 11:25:46,575 - src.processor - INFO - Archivo generado: C_VEN_CON_OF41FES260302_AP.txt (12920 registros)
+2026-03-02 11:25:46,579 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFA_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:26:22,314 - src.processor - INFO - Registros encontrados: 1239425
+2026-03-02 11:26:22,947 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89KFA260302_RCS.txt (1239425 registros)
+2026-03-02 11:26:22,948 - src.processor - INFO - Procesando: C_VEN_CON_OF539KF_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:26:30,516 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:26:30,517 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF539KF_RCS. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:26:30,517 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFE_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:26:57,939 - src.processor - INFO - Registros encontrados: 916692
+2026-03-02 11:26:58,387 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89KFE260302_S0.txt (916692 registros)
+2026-03-02 11:26:58,387 - src.processor - INFO - Procesando: C_VEN_CON_OF539KF_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:27:06,024 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:27:06,025 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF539KF_S0. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:27:06,025 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFE_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:27:25,530 - src.processor - INFO - Registros encontrados: 564272
+2026-03-02 11:27:25,815 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89KFE260302_SL.txt (564272 registros)
+2026-03-02 11:27:25,815 - src.processor - INFO - Procesando: C_VEN_CON_O539KFA_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:27:33,660 - src.processor - INFO - Registros encontrados: 14531
+2026-03-02 11:27:33,669 - src.processor - INFO - Archivo generado: C_VEN_CON_O539KFA260302_SL.txt (14531 registros)
+2026-03-02 11:27:33,670 - src.processor - INFO - Procesando: C_VEN_CON_OF41FEE_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:27:41,217 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:27:41,218 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF41FEE_SL. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:27:41,218 - src.processor - INFO - Procesando: C_VEN_CON_OF41FEE_WPP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:27:48,815 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 11:27:48,816 - src.processor - WARNING - Registros insuficientes (0) para C_VEN_CON_OF41FEE_WPP. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 11:27:49,032 - src.database - INFO - Conexión cerrada.
+2026-03-02 11:27:49,032 - src.processor - INFO - Proceso finalizado.
+2026-03-02 11:27:49,035 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 11:57:35,700 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 11:57:35,700 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 11:57:35,710 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 11:57:37,344 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 11:57:37,350 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFE_IP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:58:04,310 - src.processor - INFO - Registros encontrados: 592387
+2026-03-02 11:58:04,709 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89KFE260302_IP.txt (592387 registros)
+2026-03-02 11:58:04,711 - src.processor - INFO - Procesando: C_VEN_CON_OF41FEE_IP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 11:58:14,644 - src.processor - INFO - Registros encontrados: 15134
+2026-03-02 11:58:14,655 - src.processor - INFO - Archivo generado: C_VEN_CON_OF41FEE260302_IP.txt (15134 registros)
+2026-03-02 11:58:14,678 - src.database - INFO - Conexión cerrada.
+2026-03-02 11:58:14,678 - src.processor - INFO - Proceso finalizado.
+2026-03-02 11:58:14,679 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 12:41:50,599 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 12:41:50,599 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 12:41:50,603 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 12:41:52,189 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 12:41:52,191 - src.processor - INFO - Procesando: C_VEN_CON_OF89KFE_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 12:42:08,564 - src.processor - INFO - Registros encontrados: 428663
+2026-03-02 12:42:24,770 - src.processor - INFO - Archivo generado: C_VEN_CON_OF89KFE260302_SL.txt (428663 registros)
+2026-03-02 12:42:24,771 - src.processor - INFO - Procesando: C_VEN_PRE_H99FCAP_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 12:42:41,839 - src.processor - INFO - Registros encontrados: 458151
+2026-03-02 12:42:42,073 - src.processor - INFO - Archivo generado: C_VEN_PRE_H99FCAP260302_AP.txt (458151 registros)
+2026-03-02 12:42:42,074 - src.processor - INFO - Procesando: C_VEN_PRE_HG99FOS_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 12:42:51,597 - src.processor - INFO - Registros encontrados: 82697
+2026-03-02 12:42:51,645 - src.processor - INFO - Archivo generado: C_VEN_PRE_HG99FOS260302_AP.txt (82697 registros)
+2026-03-02 12:42:51,646 - src.processor - INFO - Procesando: C_VEN_PRE_HG99FGN_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 12:43:08,455 - src.processor - INFO - Registros encontrados: 455175
+2026-03-02 12:43:08,717 - src.processor - INFO - Archivo generado: C_VEN_PRE_HG99FGN260302_RCS.txt (455175 registros)
+2026-03-02 12:43:08,717 - src.processor - INFO - Procesando: C_VEN_PRE_HG99FGN_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 12:43:25,661 - src.processor - INFO - Registros encontrados: 458686
+2026-03-02 12:43:25,920 - src.processor - INFO - Archivo generado: C_VEN_PRE_HG99FGN260302_S0.txt (458686 registros)
+2026-03-02 12:43:25,921 - src.processor - INFO - Procesando: C_VEN_PRE_HG99FGN_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 12:43:43,133 - src.processor - INFO - Registros encontrados: 457449
+2026-03-02 12:43:43,423 - src.processor - INFO - Archivo generado: C_VEN_PRE_HG99FGN260302_SL.txt (457449 registros)
+2026-03-02 12:43:43,463 - src.database - INFO - Conexión cerrada.
+2026-03-02 12:43:43,463 - src.processor - INFO - Proceso finalizado.
+2026-03-02 12:43:43,485 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 14:28:23,323 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 14:28:23,324 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 14:28:23,343 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 14:28:25,065 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 14:28:25,073 - src.processor - INFO - Procesando: N_AUT_HOG_USOEMUS_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:28:34,158 - src.processor - INFO - Registros encontrados: 27366
+2026-03-02 14:28:34,205 - src.processor - INFO - Archivo generado: N_AUT_HOG_USOEMUS260302_AP.txt (27366 registros)
+2026-03-02 14:28:34,207 - src.processor - INFO - Procesando: N_AUT_HOG_USOCCDV_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:28:42,802 - src.processor - INFO - Registros encontrados: 25159
+2026-03-02 14:28:42,847 - src.processor - INFO - Archivo generado: N_AUT_HOG_USOCCDV260302_S0.txt (25159 registros)
+2026-03-02 14:28:42,857 - src.processor - INFO - Procesando: N_AUT_POS_USOCCDV_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:28:51,499 - src.processor - INFO - Registros encontrados: 24295
+2026-03-02 14:28:51,528 - src.processor - INFO - Archivo generado: N_AUT_POS_USOCCDV260302_S0.txt (24295 registros)
+2026-03-02 14:28:51,529 - src.processor - INFO - Procesando: N_AUT_PRE_USOCCDV_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:29:00,126 - src.processor - INFO - Registros encontrados: 25997
+2026-03-02 14:29:00,159 - src.processor - INFO - Archivo generado: N_AUT_PRE_USOCCDV260302_S0.txt (25997 registros)
+2026-03-02 14:29:00,159 - src.processor - INFO - Procesando: N_AUT_HOG_USOGNCC_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:29:08,647 - src.processor - INFO - Registros encontrados: 23668
+2026-03-02 14:29:08,675 - src.processor - INFO - Archivo generado: N_AUT_HOG_USOGNCC260302_SL.txt (23668 registros)
+2026-03-02 14:29:08,677 - src.processor - INFO - Procesando: N_AUT_POS_USOGNCC_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:29:17,306 - src.processor - INFO - Registros encontrados: 20515
+2026-03-02 14:29:17,332 - src.processor - INFO - Archivo generado: N_AUT_POS_USOGNCC260302_SL.txt (20515 registros)
+2026-03-02 14:29:17,335 - src.processor - INFO - Procesando: N_AUT_PRE_USOGNCC_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:29:25,931 - src.processor - INFO - Registros encontrados: 25984
+2026-03-02 14:29:25,969 - src.processor - INFO - Archivo generado: N_AUT_PRE_USOGNCC260302_SL.txt (25984 registros)
+2026-03-02 14:29:25,980 - src.processor - INFO - Procesando: N_VAS_POS_VIDTEDP_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:30:09,968 - src.processor - INFO - Registros encontrados: 951554
+2026-03-02 14:30:11,108 - src.processor - INFO - Archivo generado: N_VAS_POS_VIDTEDP260302_AP.txt (951554 registros)
+2026-03-02 14:30:11,110 - src.processor - INFO - Procesando: N_VAS_POS_MUS10MR_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:30:26,794 - src.processor - INFO - Registros encontrados: 201597
+2026-03-02 14:30:27,080 - src.processor - INFO - Archivo generado: N_VAS_POS_MUS10MR260302_RCS.txt (201597 registros)
+2026-03-02 14:30:27,082 - src.processor - INFO - Procesando: N_VAS_POS_MUSEMPP_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:30:48,434 - src.processor - INFO - Registros encontrados: 363117
+2026-03-02 14:30:48,853 - src.processor - INFO - Archivo generado: N_VAS_POS_MUSEMPP260302_RCS.txt (363117 registros)
+2026-03-02 14:30:48,855 - src.processor - INFO - Procesando: N_VAS_PRE_CDVM100_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:31:30,037 - src.processor - INFO - Registros encontrados: 853099
+2026-03-02 14:31:31,142 - src.processor - INFO - Archivo generado: N_VAS_PRE_CDVM100260302_SL.txt (853099 registros)
+2026-03-02 14:31:31,144 - src.processor - INFO - Procesando: N_VAS_POS_VIDTEDV_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:32:08,672 - src.processor - INFO - Registros encontrados: 779198
+2026-03-02 14:32:09,639 - src.processor - INFO - Archivo generado: N_VAS_POS_VIDTEDV260302_SL.txt (779198 registros)
+2026-03-02 14:32:09,673 - src.database - INFO - Conexión cerrada.
+2026-03-02 14:32:09,673 - src.processor - INFO - Proceso finalizado.
+2026-03-02 14:32:09,738 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 14:54:42,344 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 14:54:42,344 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 14:54:42,353 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 14:54:43,810 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 14:54:43,817 - src.processor - INFO - Procesando: C_VEN_POS_H99FCRP_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:54:51,633 - src.processor - INFO - Registros encontrados: 1043
+2026-03-02 14:54:51,635 - src.processor - INFO - Archivo generado: C_VEN_POS_H99FCRP260302_AP.txt (1043 registros)
+2026-03-02 14:54:51,636 - src.processor - INFO - Procesando: C_VEN_POS_HG99FCA_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:54:59,138 - src.processor - INFO - Registros encontrados: 1043
+2026-03-02 14:54:59,140 - src.processor - INFO - Archivo generado: C_VEN_POS_HG99FCA260302_RCS.txt (1043 registros)
+2026-03-02 14:54:59,141 - src.processor - INFO - Procesando: C_VEN_POS_HG99FGN_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:55:06,848 - src.processor - INFO - Registros encontrados: 1043
+2026-03-02 14:55:06,850 - src.processor - INFO - Archivo generado: C_VEN_POS_HG99FGN260302_S0.txt (1043 registros)
+2026-03-02 14:55:06,851 - src.processor - INFO - Procesando: C_VEN_POS_HG99FGN_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 14:55:18,704 - src.processor - INFO - Registros encontrados: 1047
+2026-03-02 14:55:18,706 - src.processor - INFO - Archivo generado: C_VEN_POS_HG99FGN260302_SL.txt (1047 registros)
+2026-03-02 14:55:18,747 - src.database - INFO - Conexión cerrada.
+2026-03-02 14:55:18,748 - src.processor - INFO - Proceso finalizado.
+2026-03-02 14:55:18,749 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 16:44:04,669 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 16:44:04,669 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 16:44:04,674 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 16:44:06,159 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 16:44:06,161 - src.processor - INFO - Procesando: C_CLU_POS_CUPPOMS_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:44:14,305 - src.processor - INFO - Registros encontrados: 11254
+2026-03-02 16:44:14,314 - src.processor - INFO - Archivo generado: C_CLU_POS_CUPPOMS260302_AP.txt (11254 registros)
+2026-03-02 16:44:14,316 - src.processor - INFO - Procesando: C_CLU_POS_CUPGFMA_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:44:22,036 - src.processor - INFO - Registros encontrados: 5319
+2026-03-02 16:44:22,041 - src.processor - INFO - Archivo generado: C_CLU_POS_CUPGFMA260302_RCS.txt (5319 registros)
+2026-03-02 16:44:22,042 - src.processor - INFO - Procesando: C_CLU_PRE_CUPGFMA_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:44:29,963 - src.processor - INFO - Registros encontrados: 22610
+2026-03-02 16:44:29,982 - src.processor - INFO - Archivo generado: C_CLU_PRE_CUPGFMA260302_RCS.txt (22610 registros)
+2026-03-02 16:44:29,983 - src.processor - INFO - Procesando: C_CLU_PRE_CUPPOMA_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:44:38,122 - src.processor - INFO - Registros encontrados: 22620
+2026-03-02 16:44:38,139 - src.processor - INFO - Archivo generado: C_CLU_PRE_CUPPOMA260302_RCS.txt (22620 registros)
+2026-03-02 16:44:38,140 - src.processor - INFO - Procesando: C_CLU_HOG_CUPONGG_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:44:46,382 - src.processor - INFO - Registros encontrados: 27451
+2026-03-02 16:44:46,398 - src.processor - INFO - Archivo generado: C_CLU_HOG_CUPONGG260302_S0.txt (27451 registros)
+2026-03-02 16:44:46,400 - src.processor - INFO - Procesando: C_CLU_POS_CUPONGG_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:44:54,189 - src.processor - INFO - Registros encontrados: 5396
+2026-03-02 16:44:54,196 - src.processor - INFO - Archivo generado: C_CLU_POS_CUPONGG260302_S0.txt (5396 registros)
+2026-03-02 16:44:54,198 - src.processor - INFO - Procesando: C_CLU_PRE_CUPONGG_S0 para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:02,360 - src.processor - INFO - Registros encontrados: 22800
+2026-03-02 16:45:02,373 - src.processor - INFO - Archivo generado: C_CLU_PRE_CUPONGG260302_S0.txt (22800 registros)
+2026-03-02 16:45:02,375 - src.processor - INFO - Procesando: C_VEN_HOG_IOTPTQ1_AP para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:13,218 - src.processor - INFO - Registros encontrados: 183710
+2026-03-02 16:45:13,308 - src.processor - INFO - Archivo generado: C_VEN_HOG_IOTPTQ1260302_AP.txt (183710 registros)
+2026-03-02 16:45:13,309 - src.processor - INFO - Procesando: C_VEN_POS_IOTRJQ1_RCS para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:21,675 - src.processor - INFO - Registros encontrados: 33875
+2026-03-02 16:45:21,693 - src.processor - INFO - Archivo generado: C_VEN_POS_IOTRJQ1260302_RCS.txt (33875 registros)
+2026-03-02 16:45:21,694 - src.processor - INFO - Procesando: C_VEN_EQU_COGENPO_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:29,553 - src.processor - INFO - Registros encontrados: 4286
+2026-03-02 16:45:29,556 - src.processor - INFO - Archivo generado: C_VEN_EQU_COGENPO260302_SL.txt (4286 registros)
+2026-03-02 16:45:29,557 - src.processor - INFO - Procesando: C_VEN_POS_IOTRJQ1_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:39,730 - src.processor - INFO - Registros encontrados: 121342
+2026-03-02 16:45:39,792 - src.processor - INFO - Archivo generado: C_VEN_POS_IOTRJQ1260302_SL.txt (121342 registros)
+2026-03-02 16:45:39,794 - src.processor - INFO - Procesando: C_INN_POS_AFICMDA_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:47,494 - src.processor - INFO - Registros encontrados: 0
+2026-03-02 16:45:47,495 - src.processor - WARNING - Registros insuficientes (0) para C_INN_POS_AFICMDA_SL. Mínimo requerido: 50. Archivo NO generado.
+2026-03-02 16:45:47,496 - src.processor - INFO - Procesando: C_VEN_EQU_CLIEBHO_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:45:55,300 - src.processor - INFO - Registros encontrados: 5292
+2026-03-02 16:45:55,303 - src.processor - INFO - Archivo generado: C_VEN_EQU_CLIEBHO260302_SL.txt (5292 registros)
+2026-03-02 16:45:55,305 - src.processor - INFO - Procesando: C_VEN_EQU_CLIEAPO_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:46:03,205 - src.processor - INFO - Registros encontrados: 7174
+2026-03-02 16:46:03,209 - src.processor - INFO - Archivo generado: C_VEN_EQU_CLIEAPO260302_SL.txt (7174 registros)
+2026-03-02 16:46:03,228 - src.database - INFO - Conexión cerrada.
+2026-03-02 16:46:03,229 - src.processor - INFO - Proceso finalizado.
+2026-03-02 16:46:03,230 - Main - INFO - --- Ejecución completada exitosamente ---
+2026-03-02 16:46:40,178 - Main - INFO - --- Iniciando Sistema de Generación de Audiencias ---
+2026-03-02 16:46:40,179 - src.processor - INFO - Iniciando procesamiento de audiencias...
+2026-03-02 16:46:40,184 - src.database - INFO - Intentando conectar a Teradata host: tdtvntg.claro.com.co...
+2026-03-02 16:46:41,553 - src.database - INFO - Conexión a Teradata exitosa.
+2026-03-02 16:46:41,554 - src.processor - INFO - Procesando: C_VAS_HOG_VIDWOOD_SL para fecha 2026-03-02 en carpeta 20260302
+2026-03-02 16:46:50,190 - src.processor - INFO - Registros encontrados: 34246
+2026-03-02 16:46:50,209 - src.processor - INFO - Archivo generado: C_VAS_HOG_VIDWOOD260302_SL.txt (34246 registros)
+2026-03-02 16:46:50,263 - src.database - INFO - Conexión cerrada.
+2026-03-02 16:46:50,263 - src.processor - INFO - Proceso finalizado.
+2026-03-02 16:46:50,265 - Main - INFO - --- Ejecución completada exitosamente ---
