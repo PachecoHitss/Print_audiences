@@ -160,6 +160,7 @@ class AudienceProcessor:
                     continue
         except Exception as e:
             logger.critical(f"Error crítico en el proceso: {e}")
+            raise
         finally:
             db_manager.disconnect()
             logger.info("Proceso finalizado.")
