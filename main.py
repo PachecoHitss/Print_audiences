@@ -1,8 +1,11 @@
 import sys
-import os
+from pathlib import Path
 import logging
 import argparse
 from src.processor import AudienceProcessor
+
+# Garantizar que el directorio de logs exista antes de configurar el FileHandler
+Path("logs").mkdir(exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,

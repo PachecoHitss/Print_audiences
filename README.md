@@ -27,7 +27,7 @@ Este proyecto es una herramienta de automatización desarrollada en Python para 
 ### 1. Credenciales de Base de Datos (`Config.json`)
 El sistema busca un archivo llamado `Config.json` **dos niveles arriba** de la carpeta `src` (es decir, en la carpeta padre de donde se encuentra este proyecto, por ejemplo `D:\LABORAL\Projects\Config.json`).
 
-Este archivo debe tener la siguiente estructura:
+Este archivo debe tener la siguiente estructura completa:
 
 ```json
 {
@@ -35,15 +35,24 @@ Este archivo debe tener la siguiente estructura:
         "TD_HOST": "tu_host_teradata",
         "TD_USER": "tu_usuario",
         "TD_PASSWORD": "tu_contraseña"
+    },
+    "paths": {
+        "input_file": "D:\\LABORAL\\Projects\\Project_A\\data\\printAudiencesData\\PrintAudiencesData.csv",
+        "output_base": "D:\\OneDrive\\ruta\\a\\Audiencias\\especificas",
+        "servicio_base": "D:\\OneDrive\\ruta\\a\\Audiencias\\Notificacion_Servicio"
+    },
+    "settings": {
+        "min_records": 50
     }
 }
 ```
 
-### 2. Rutas de Archivos (Hardcoded)
-Actualmente, las rutas de entrada y salida están definidas directamente en el código (`src/processor.py`). Asegúrate de que estas rutas existan o modifícalas en el código si es necesario:
-
-*   **Entrada (CSV):** `D:\LABORAL\Projects\Project_A\data\printAudiencesData\PrintAudiencesData.csv`
-*   **Salida (Resultados):** `D:\OneDrive - Comunicacion Celular S.A.- Comcel S.A\Archivos de GCCO CG - Bases Certificadas\especificas`
+> **Secciones requeridas:**
+> - `teradata`: credenciales de conexión.
+> - `paths.input_file`: ruta al CSV de entrada con las campañas.
+> - `paths.output_base`: carpeta raíz de salida para audiencias de marketing.
+> - `paths.servicio_base`: carpeta raíz de salida para audiencias de servicio (nemotecnia `N_*`).
+> - `settings.min_records` *(opcional)*: mínimo de registros para generar un archivo (por defecto `50`).
 
 ## ▶️ Ejecución
 

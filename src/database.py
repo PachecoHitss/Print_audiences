@@ -1,20 +1,13 @@
 import teradatasql
 import logging
-from src.config import config_loader
+from src.config import get_config
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("logs/app.log"),
-        logging.StreamHandler()
-    ]
-)
 logger = logging.getLogger(__name__)
+
 
 class DatabaseManager:
     def __init__(self):
-        self.creds = config_loader.get_teradata_creds()
+        self.creds = get_config().get_teradata_creds()
         self.connection = None
 
     def connect(self):
@@ -33,20 +26,34 @@ class DatabaseManager:
     def disconnect(self):
         if self.connection:
             self.connection.close()
+            self.connection = None
             logger.info("Conexión cerrada.")
 
     def execute_query(self, query, params=None):
         if not self.connection:
             self.connect()
+        cursor = self.connection.cursor()
         try:
-            cursor = self.connection.cursor()
             if params:
                 cursor.execute(query, params)
             else:
                 cursor.execute(query)
-            return cursor
+            description = cursor.description
+            rows = cursor.fetchall()
+            return description, rows
         except Exception as e:
             logger.error(f"Error ejecutando query: {e}")
             raise
+        finally:
+            cursor.close()
 
-db_manager = DatabaseManager()
+
+_db_manager = None
+
+
+def get_db_manager() -> DatabaseManager:
+    """Devuelve la instancia única de DatabaseManager (lazy initialization)."""
+    global _db_manager
+    if _db_manager is None:
+        _db_manager = DatabaseManager()
+    return _db_manager

@@ -1,7 +1,6 @@
 import json
-import os
-import sys
 from pathlib import Path
+
 
 class ConfigLoader:
     def __init__(self):
@@ -28,4 +27,24 @@ class ConfigLoader:
             raise ValueError(f"Faltan credenciales de Teradata en Config.json: {missing}")
         return td_config
 
-config_loader = ConfigLoader()
+    def get_paths(self):
+        paths = self._config.get('paths', {})
+        required_keys = ['input_file', 'output_base', 'servicio_base']
+        missing = [key for key in required_keys if key not in paths]
+        if missing:
+            raise ValueError(f"Faltan rutas en Config.json ['paths']: {missing}")
+        return paths
+
+    def get_settings(self):
+        return self._config.get('settings', {})
+
+
+_config_loader = None
+
+
+def get_config() -> ConfigLoader:
+    """Devuelve la instancia única de ConfigLoader (lazy initialization)."""
+    global _config_loader
+    if _config_loader is None:
+        _config_loader = ConfigLoader()
+    return _config_loader
